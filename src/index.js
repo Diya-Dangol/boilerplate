@@ -1,10 +1,9 @@
-import { registerBlockType } from '@wordpress/blocks';
-import './style.scss';
-import Edit from './edit';
-import save from './save';
-import metadata from './block.json';
+import { registerBlockType } from "@wordpress/blocks";
+import "./style.scss";
+import Edit from "./edit";
+import save from "./save";
 
-registerBlockType( metadata.name, {
+registerBlockType("create-block/boilerplate", {
 	edit: Edit,
 	save,
-} );
+});
